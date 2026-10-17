@@ -1,0 +1,30 @@
+# Секреты — никогда не публикуем
+.env
+.env.*
+!.env.example
+
+# Виртуальное окружение
+.venv/
+venv/
+
+# Кэш Python и артефакты сборки
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Локальные данные и служебные каталоги
+.vkbottle/
+*.log
+.DS_Store
+
+# Рабочие файлы (личные наработки, в репозиторий не выносим)
+prompts/
+
+# IDE
+.idea/
+.vscode/
