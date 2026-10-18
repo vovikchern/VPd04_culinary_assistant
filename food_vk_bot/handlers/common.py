@@ -83,8 +83,7 @@ async def send_recipe_card(
     attachment = await ctx.photos.send_photo(message, card.get("image", ""))
     if attachment:
         await message.answer("🖼 Фото блюда", attachment=attachment)
-    else:
-        await message.answer("🏠 Главное меню")
+    await show_main_menu(message)
 
 
 async def report_error(message: Message, exc: Exception) -> None:
